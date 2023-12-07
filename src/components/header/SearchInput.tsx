@@ -26,6 +26,10 @@ const StyledInputDiv = styled.div`
       color: red;
       transition: 500ms;
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 `;
 
@@ -36,9 +40,11 @@ const FilterButton = styled.button`
   gap: 5px;
   border: none;
   font-size: 18px;
+  background: var(--white);
 
   &:hover {
     color: var(--red);
+    transition: 500ms;
   }
 
   & span {
@@ -48,12 +54,12 @@ const FilterButton = styled.button`
 
   & .open {
     transform: rotate(180deg);
-    transition: 700ms;
+    transition: 300ms;
   }
 
   & .close {
     transform: rotate(0deg);
-    transition: 700ms;
+    transition: 300ms;
   }
 `;
 
