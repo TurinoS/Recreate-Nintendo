@@ -44,7 +44,10 @@ export default function OpenTabButton({ children }: { children: ReactNode }) {
   const [openSelect, setOpenSelect] = useState(false);
 
   return (
-    <StyledButton onClick={() => setOpenSelect(!openSelect)}>
+    <StyledButton
+      onFocus={() => setOpenSelect(true)}
+      onBlur={() => setOpenSelect(false)}
+    >
       <p>{children}</p>
       <IoIosArrowDown className={openSelect ? "open" : "close"} />
     </StyledButton>
