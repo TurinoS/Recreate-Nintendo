@@ -7,7 +7,11 @@ import SearchInput from "./SearchInput";
 import Navbar from "./Navbar";
 import SubNavbar from "./SubNavbar";
 
-const StyledHeader = styled.header``;
+const StyledHeader = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 1;
+`;
 
 const TopHeader = styled.div`
   display: flex;

@@ -14,8 +14,8 @@ const StyledSubNavbar = styled.nav`
   justify-content: center;
   background-color: var(--white);
   padding: 10px;
-  border-top: 1px solid var(--light-gray);
-  border-bottom: 1px solid var(--light-gray);
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
 
   & ul {
     list-style: none;

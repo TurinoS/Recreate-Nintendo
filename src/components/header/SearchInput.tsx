@@ -5,7 +5,7 @@ import { IoSearch } from "react-icons/io5";
 import OpenTabButton from "./OpenTabButton";
 
 const StyledInputDiv = styled.div`
-  border-bottom: 2px solid var(--gray);
+  border-bottom: 2px solid var(--black);
   padding-bottom: 0.1em;
   font-size: 24px;
   transition: 500ms;

@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { ReactNode, useState } from "react";
 
 const StyledButton = styled.button`
-  color: var(--gray);
+  color: var(--black);
   display: flex;
   align-items: center;
   gap: 5px;

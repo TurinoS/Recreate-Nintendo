@@ -6,7 +6,7 @@ const StyledLink = styled.a`
   align-items: center;
   gap: 2px;
   text-decoration: none;
-  color: var(--gray);
+  color: var(--black);
 
   &:hover {
     color: var(--red);
