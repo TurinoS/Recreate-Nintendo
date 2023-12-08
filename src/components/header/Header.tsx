@@ -5,12 +5,16 @@ import logo from "../../../public/nintendo-logo.jpg";
 import styled from "styled-components";
 import SearchInput from "./SearchInput";
 import Navbar from "./Navbar";
+import SubNavbar from "./SubNavbar";
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.header``;
+
+const TopHeader = styled.div`
   display: flex;
   justify-content: space-between;
   background: var(--white);
   font-weight: 600;
+  max-height: 49px;
 
   & div {
     display: flex;
@@ -22,13 +26,16 @@ const StyledHeader = styled.header`
 export default function Header() {
   return (
     <StyledHeader>
-      <div>
-        <a href="/">
-          <Image src={logo} alt="Nintendo logo" width={105} height={52} />
-        </a>
-        <SearchInput />
-      </div>
-      <Navbar />
+      <TopHeader>
+        <div>
+          <a href="/">
+            <Image src={logo} alt="Nintendo logo" width={105} height={52} />
+          </a>
+          <SearchInput />
+        </div>
+        <Navbar />
+      </TopHeader>
+      <SubNavbar />
     </StyledHeader>
   );
 }

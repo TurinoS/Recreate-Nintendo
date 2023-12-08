@@ -9,8 +9,9 @@ import {
 } from "react-icons/md";
 import flag from "../../../public/american-flag-icon.png";
 import Image from "next/image";
+import HeaderLink from "./HeaderLink";
 
-const NavbarList = styled.nav`
+const StyledNavbar = styled.nav`
   display: flex;
   align-items: center;
   margin-right: 1em;
@@ -20,62 +21,46 @@ const NavbarList = styled.nav`
     display: flex;
     gap: 1em;
 
-    & li {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-
-      & svg {
-        font-size: 24px;
-      }
-    }
-  }
-
-  & a {
-    text-decoration: none;
-    color: var(--gray);
-
-    &:hover {
-      color: var(--red);
-      transition: 500ms;
+    & svg {
+      font-size: 24px;
     }
   }
 `;
 
 export default function Navbar() {
   return (
-    <NavbarList>
+    <StyledNavbar>
       <ul>
-        <a href="#">
-          <li>
+        <li>
+          <HeaderLink href="#">
             <MdLiveHelp />
             Support
-          </li>
-        </a>
-        <a href="#">
-          <li>
+          </HeaderLink>
+        </li>
+        <li>
+          <HeaderLink href="#">
             <MdFavorite />
             Wish List
-          </li>
-        </a>
-        <a href="#">
-          <li>
+          </HeaderLink>
+        </li>
+        <li>
+          <HeaderLink href="#">
             <MdShoppingCart />
             Cart
-          </li>
-        </a>
-        <a href="#">
-          <li>
+          </HeaderLink>
+        </li>
+        <li>
+          <HeaderLink href="#">
             <MdPerson />
             Log in / Sign up
-          </li>
-        </a>
-        <a href="#">
-          <li>
+          </HeaderLink>
+        </li>
+        <li>
+          <HeaderLink href="#">
             <Image src={flag} alt="Language - english" width={30} />
-          </li>
-        </a>
+          </HeaderLink>
+        </li>
       </ul>
-    </NavbarList>
+    </StyledNavbar>
   );
 }

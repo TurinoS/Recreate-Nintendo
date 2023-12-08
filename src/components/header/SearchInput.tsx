@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import styled from "styled-components";
 import { IoSearch } from "react-icons/io5";
-import { IoIosArrowDown } from "react-icons/io";
+import OpenTabButton from "./OpenTabButton";
 
 const StyledInputDiv = styled.div`
   border-bottom: 2px solid var(--gray);
@@ -33,49 +32,14 @@ const StyledInputDiv = styled.div`
   }
 `;
 
-const FilterButton = styled.button`
-  color: var(--gray);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  border: none;
-  font-size: 18px;
-  background: var(--white);
-
-  &:hover {
-    color: var(--red);
-    transition: 500ms;
-  }
-
-  & span {
-    font-size: 22px;
-    margin-top: 6px;
-  }
-
-  & .open {
-    transform: rotate(180deg);
-    transition: 300ms;
-  }
-
-  & .close {
-    transform: rotate(0deg);
-    transition: 300ms;
-  }
-`;
-
 export default function SearchInput() {
-  const [openSelect, setOpenSelect] = useState(false);
-
   return (
     <StyledInputDiv>
       <label htmlFor="search">
         <IoSearch />
       </label>
       <input type="search" id="search" name="search" placeholder="Search" />
-      <FilterButton onClick={() => setOpenSelect(!openSelect)}>
-        <p>Games</p>
-        <IoIosArrowDown className={openSelect ? "open" : "close"} />
-      </FilterButton>
+      <OpenTabButton>Games</OpenTabButton>
     </StyledInputDiv>
   );
 }
