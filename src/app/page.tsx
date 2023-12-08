@@ -1,3 +1,4 @@
+import GameSaleSection from "@/components/gameSaleSection/GameSaleSection";
 import SubHeader from "@/components/SubHeader";
 import Header from "@/components/header/Header";
 
@@ -6,7 +7,10 @@ export default function Home() {
     <main>
       <Header />
       <SubHeader />
-      <h1>Recreate Nintendo project starts here</h1>
+      <GameSaleSection />
+      <h1 style={{ backgroundColor: "white", height: "500px" }}>
+        Recreate Nintendo project starts here
+      </h1>
     </main>
   );
 }
