@@ -32,3 +32,17 @@ main {
 svg {
   font-size: 24px;
 }
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-weight: 1000;
+  color: var(--white);
+}
+
+.swiper-button-prev:after {
+  margin-left: 50px;
+}
+
+.swiper-button-next:after {
+  margin-right: 50px;
+}
