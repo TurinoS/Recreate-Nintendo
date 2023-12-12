@@ -3,6 +3,7 @@
 import styled from "styled-components";
 import UserJourney from "./UserJourney";
 import Carousel from "../carousel/Carousel";
+import SaleContainer from "./SaleContainer";
 
 const GameSection = styled.section`
   width: 1140px;
@@ -20,12 +21,7 @@ const GameSection = styled.section`
 const GameInfo = styled.div`
   display: grid;
   grid-template-columns: 60% 1fr;
-  gap: 10px;
-`;
-
-const SaleContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  gap: 3rem;
 `;
 
 export default function GameSaleSection() {
@@ -34,10 +30,7 @@ export default function GameSaleSection() {
       <UserJourney />
       <GameInfo>
         <Carousel />
-        <SaleContainer>
-          <h1>Valley</h1>
-          <h2>price 14 euros</h2>
-        </SaleContainer>
+        <SaleContainer />
       </GameInfo>
     </GameSection>
   );
