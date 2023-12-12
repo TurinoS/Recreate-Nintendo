@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import LikeButton from "../LikeButton";
+import Button from "../Button";
+import { TbDownload } from "react-icons/tb";
 
 const StyledSaleContainer = styled.div`
   display: flex;
@@ -29,6 +31,10 @@ export default function SaleContainer() {
       <h2>
         $14.99 <LikeButton />
       </h2>
+
+      <Button>
+        <TbDownload /> Direct download
+      </Button>
     </StyledSaleContainer>
   );
 }
