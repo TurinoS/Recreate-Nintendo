@@ -4,10 +4,11 @@ import styled from "styled-components";
 import UserJourney from "./UserJourney";
 import Carousel from "../carousel/Carousel";
 import SaleContainer from "./SaleContainer";
+import ESRB from "./ESRB";
 
 const GameSection = styled.section`
   width: 1140px;
-  height: 590px;
+  height: 630px;
   margin: 0 auto;
   background-color: var(--white);
   border-radius: 24px;
@@ -32,6 +33,7 @@ export default function GameSaleSection() {
         <Carousel />
         <SaleContainer />
       </GameInfo>
+      <ESRB />
     </GameSection>
   );
 }

@@ -6,7 +6,7 @@ import { TbDownload } from "react-icons/tb";
 const StyledSaleContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 
   & span {
     border-left: 2px solid var(--red);
@@ -19,6 +19,10 @@ const StyledSaleContainer = styled.div`
     font-size: 32px;
     display: flex;
     justify-content: space-between;
+  }
+
+  & p {
+    font-size: 11px;
   }
 `;
 
@@ -35,6 +39,7 @@ export default function SaleContainer() {
       <Button>
         <TbDownload /> Direct download
       </Button>
+      <p>This item will be sent to your system automatically after purchase.</p>
     </StyledSaleContainer>
   );
 }

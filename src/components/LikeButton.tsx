@@ -9,7 +9,7 @@ const StyledLikeButton = styled.button`
   transition: 500ms;
 
   & svg {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   &:hover {
