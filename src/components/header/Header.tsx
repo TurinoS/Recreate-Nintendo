@@ -8,9 +8,10 @@ import Navbar from "./Navbar";
 import SubNavbar from "./SubNavbar";
 
 const StyledHeader = styled.header`
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 `;
 
 const TopHeader = styled.div`

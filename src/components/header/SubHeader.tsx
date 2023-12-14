@@ -9,6 +9,7 @@ const StyledSubHeader = styled.div`
   justify-content: center;
   background-color: var(--light-gray);
   padding: 10px;
+  margin-top: 95px;
 
   & div {
     display: flex;

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import styled from "styled-components";
-import imageCarousel from "../carousel/imagesCarousel";
+import imageCarousel from "./imagesCarousel";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";

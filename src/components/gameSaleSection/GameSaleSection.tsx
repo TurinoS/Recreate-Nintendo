@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 import UserJourney from "./UserJourney";
-import Carousel from "../carousel/Carousel";
+import Carousel from "./carousel/Carousel";
 import SaleContainer from "./SaleContainer";
 import ESRB from "./ESRB";
 

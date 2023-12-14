@@ -19,7 +19,7 @@ const pulse = keyframes`
   }
 `;
 
-const StyledButton = styled.button`
+const StyledButton = styled.a`
   background-color: var(--red);
   transition: 600ms;
   border: none;
