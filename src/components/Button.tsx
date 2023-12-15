@@ -1,6 +1,11 @@
 import { ReactNode } from "react";
 import styled, { keyframes } from "styled-components";
 
+type ButtonProps = {
+  children: ReactNode;
+  fontSize: string;
+};
+
 const pulse = keyframes`
   0% {
     transform: scale(1);
@@ -19,7 +24,7 @@ const pulse = keyframes`
   }
 `;
 
-const StyledButton = styled.a`
+const StyledButton = styled.a<ButtonProps>`
   background-color: var(--red);
   transition: 600ms;
   border: none;
@@ -30,7 +35,7 @@ const StyledButton = styled.a`
   justify-content: center;
   gap: 8px;
   color: var(--white);
-  font-size: 20px;
+  font-size: ${(props) => props.fontSize};
   cursor: pointer;
 
   &:hover {
@@ -40,6 +45,6 @@ const StyledButton = styled.a`
   }
 `;
 
-export default function Button({ children }: { children: ReactNode }) {
-  return <StyledButton>{children}</StyledButton>;
+export default function Button({ children, fontSize }: ButtonProps) {
+  return <StyledButton fontSize={fontSize}>{children}</StyledButton>;
 }

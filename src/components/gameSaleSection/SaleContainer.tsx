@@ -36,7 +36,7 @@ export default function SaleContainer() {
         $14.99 <LikeButton />
       </h2>
 
-      <Button>
+      <Button fontSize="20px">
         <TbDownload /> Direct download
       </Button>
       <p>This item will be sent to your system automatically after purchase.</p>

@@ -31,8 +31,8 @@ export default function ESRB() {
       <Image
         src={ESRBimage}
         alt="ESRB video game content rating in which recommends a video game to those 10+"
-        width={50}
-        height={70}
+        height={75}
+        style={{ width: "auto" }}
       />
       <div>
         <p>
